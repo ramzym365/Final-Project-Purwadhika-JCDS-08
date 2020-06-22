@@ -1,0 +1,9 @@
+,Accuracy Score,F1-Score
+Logistic Regression,0.8053165334972342,0.8792528352234823
+Logistic Regression with Hyperparameter Tuning,0.800860479409957,0.8767123287671232
+Support Vector Classifier (SVC),0.8209895513214506,0.8893321934074285
+Support Vector Classifier (SVC) with Hyperparameter Tuning,0.8225261216963737,0.8907181379506103
+Random Forest Classifier,0.8205285802089736,0.8847671665351224
+Random Forest Classifier with Hyperparameter Tuning,0.8389674247080516,0.897516135341287
+XGBoost Classifier,0.842501536570375,0.8991241019584686
+XGBoost Classifier with Hyperparameter Tuning,0.8426551936078672,0.89937106918239

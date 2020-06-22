@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+</head>
+<body style="background-color:white">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="http://127.0.0.1:5000/">Home</a>
+            <a class="nav-item nav-link" href="http://127.0.0.1:5000/introduction">Introduction</a>
+            <a class="nav-item nav-link" href="http://127.0.0.1:5000/dataset">Dataset</a>
+            <a class="nav-item nav-link active" href="http://127.0.0.1:5000/visualization">Data Visualization<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="http://127.0.0.1:5000/conclusion">Conclusion</a>
+            <a class="nav-item nav-link" href="http://127.0.0.1:5000/prediction">Prediction</a>
+            
+        </div>
+        </div>
+    </nav>
+
+    <br>
+    <center>
+        <h2>DATA VISUALIZATION</h2>
+    </center>
+    <br>
+
+    <center>
+    <div class="accordion" id="accordionExample">
+
+        <div class="card" style="max-width: 1500px">
+          <div class="card-header bg-danger" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block  text-white text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Age Distribution based on Income and Gender
+              </button>
+            </h2>
+          </div>     
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+            <center><img src="http://127.0.0.1:5000/static/age dist.png" class="img-fluid" alt="Responsive image"></center>
+            <center><img src="http://127.0.0.1:5000/static/gender dist.png" class="img-fluid" alt="Responsive image"></center>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="max-width: 1500px">
+          <div class="card-header bg-danger" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-white text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Categorical Feature Distribution based on Income
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+            <center><img src="http://127.0.0.1:5000/static/comb dist.png" class="img-fluid" alt="Responsive image"></center>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="max-width: 1500px">
+          <div class="card-header bg-danger" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-white text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Level of Education & Years of Education Distribution based on Income
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+            <center><img src="http://127.0.0.1:5000/static/edu dist.png" class="img-fluid" alt="Responsive image"></center>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="max-width: 1500px">
+            <div class="card-header bg-danger" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-white text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Pie Chart of Education based on Income
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                <center><img src="http://127.0.0.1:5000/static/occu dist.png" class="img-fluid" alt="Responsive image"></center>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="max-width: 1500px">
+            <div class="card-header bg-danger" id="headingFive">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-white text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Pie Chart of Occupation based on Income
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+              <div class="card-body">
+                <center><img src="http://127.0.0.1:5000/static/workclass dist.png" class="img-fluid" alt="Responsive image"></center>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="max-width: 1500px">
+            <div class="card-header bg-danger" id="headingSix">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-white text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Boxplot of Marital Status based on Income
+                </button>
+              </h2>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+              <div class="card-body">
+                <center><img src="http://127.0.0.1:5000/static/marital status box.png" class="img-fluid" alt="Responsive image"></center>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="max-width: 1500px" >
+            <div class="card-header bg-danger" id="headingSeven">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-white text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                Pie Chart of Workclass Distribution based on Income
+                </button>
+              </h2>
+            </div>
+            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+              <div class="card-body">
+                <center><img src="http://127.0.0.1:5000/static/wc dist.png" class="img-fluid" alt="Responsive image"></center>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="max-width: 1500px" >
+            <div class="card-header bg-danger" id="headingEight">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-white text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                Workhours per Week Distribution based on Gender
+                </button>
+              </h2>
+            </div>
+            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+              <div class="card-body">
+                <center><img src="http://127.0.0.1:5000/static/wh gender.png" class="img-fluid" alt="Responsive image"></center>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="max-width: 1500px" >
+            <div class="card-header bg-danger" id="headingNine">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-white text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                Workhours per Week Distribution based on Age
+                </button>
+              </h2>
+            </div>
+            <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+              <div class="card-body">
+                <center><img src="http://127.0.0.1:5000/static/wh age.png" class="img-fluid" alt="Responsive image"></center>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="max-width: 1500px" >
+            <div class="card-header bg-danger" id="headingTen">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-white text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                Workhours per Week Distribution based on Occupation
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+              <div class="card-body">
+                <center><img src="http://127.0.0.1:5000/static/wh occu.png" class="img-fluid" alt="Responsive image"></center>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="max-width: 1500px" >
+            <div class="card-header bg-danger" id="headingEleven">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-white text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                Correlation Ration between Features
+                </button>
+              </h2>
+            </div>
+            <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
+              <div class="card-body">
+                <center><img src="http://127.0.0.1:5000/static/corr.png" class="img-fluid" alt="Responsive image"></center>
+              </div>
+            </div>
+          </div>
+
+      </div>
+      </center>
+
+
+</body>
+</html>

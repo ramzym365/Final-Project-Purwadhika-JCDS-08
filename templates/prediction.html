@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Income Prediction</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+
+<body style="background-color:whitesmoke">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="http://127.0.0.1:5000/">Home</a>
+            <a class="nav-item nav-link" href="http://127.0.0.1:5000/introduction">Introduction</a>
+            <a class="nav-item nav-link" href="http://127.0.0.1:5000/dataset">Dataset</a>
+            <a class="nav-item nav-link" href="http://127.0.0.1:5000/visualization">Data Visualization</a>
+            <a class="nav-item nav-link" href="http://127.0.0.1:5000/conclusion">Conclusion</a>
+            <a class="nav-item nav-link active" href="http://127.0.0.1:5000/prediction">Prediction<span class="sr-only">(current)</span></a>
+          </div>
+        </div>
+    </nav>
+
+    <center><h2><b>Income Prediction</b></h2></center>
+    <form method = 'POST' action = 'http://127.0.0.1:5000/result'>
+        
+        <label for="Age" style="font-size:18px;" >Input Age :</label>
+        <input type="number" id="Age" name="Age" min="1" max="99" style = 'font-size:18px'> 
+        
+        <br>
+        <label for = "Workclass" style = "font-size:18px;">Input Workclass :</label>
+        <select id = "Workclass" name = "Workclass">
+            <option value="Private" style = "font-size:18px;">Private</option>
+            <option value="Government" style = "font-size:18px;">Government</option>
+            <option value="Self-Employed" style = "font-size:18px;">Self Employed</option>
+            <option value="Other" style = "font-size:18px;">Other</option>
+        </select> 
+
+        <br>
+        <label for = "Education" style = "font-size:18px;">Input Education Level :</label>
+        <select id = "Education" name = "Education">
+            <option value="Preschool" style = "font-size:18px;">Preschool</option>
+            <option value="Elementary-School" style = "font-size:18px;">Elementary School</option>
+            <option value="Middle-School" style = "font-size:18px;">Middle School</option>
+            <option value="High-School" style = "font-size:18px;">Some Years in High School</option>
+            <option value="HS-grad" style = "font-size:18px;">High School Graduate</option>
+            <option value="Prof-school" style = "font-size:18px;">Professional School</option>
+            <option value="Assoc-acdm" style = "font-size:18px;">Vocational Education</option>
+            <option value="Assoc-voc" style = "font-size:18px;">Technical Vocational Education</option>
+            <option value="Some-college" style = "font-size:18px;">Some Years in College</option>
+            <option value="Bachelors" style = "font-size:18px;">Bachelor / College Graduate</option>
+            <option value="Masters" style = "font-size:18px;">Master Graduate</option>
+            <option value="Doctorate" style = "font-size:18px;">Doctorate Graduate</option>        
+        </select> 
+
+        <br>
+        <label for="Years of Education" style="font-size:18px;" >Input Amount of Years in Education :</label>
+        <input type="number" id="Years of Education" name="Years of Education" min="1" max="16" style = 'font-size:18px'>
+        
+        <br>
+        <label for = "Marital Status" style = "font-size:18px;">Input Marital Status :</label>
+        <select id = "Marital Status" name = "Marital Status">
+            <option value="Single" style = "font-size:18px;">Single</option>
+            <option value="Married" style = "font-size:18px;">Married</option>
+            <option value="Separated" style = "font-size:18px;">Separated</option>
+            <option value="Divorced" style = "font-size:18px;">Divorced</option>
+            <option value="Widowed" style = "font-size:18px;">Widowed</option>
+        </select> 
+
+        <br>
+        <label for = "Occupation" style = "font-size:18px;">Input Occupation :</label>
+        <select id = "Occupation" name = "Occupation">
+            <option value="Craft-repair" style = "font-size:18px;">Handyman / Craft Repairman</option>
+            <option value="Prof-specialty" style = "font-size:18px;">Professional Specialty (Engineer, Teacher, etc.)</option>
+            <option value="Adm-clerical" style = "font-size:18px;">Administrative Cleric</option>
+            <option value="Exec-managerial" style = "font-size:18px;">Executive Managerial</option>
+            <option value="Sales" style = "font-size:18px;">Sales</option>
+            <option value="Machine-op-inspct" style = "font-size:18px;">Machine Operational Inspector</option>
+            <option value="Transport-moving" style = "font-size:18px;">Transport Moving</option>
+            <option value="Handlers-cleaners" style = "font-size:18px;">Handler / Cleaner</option>
+            <option value="Farming-fishing" style = "font-size:18px;">Farmer / Fisher</option>
+            <option value="Tech-support" style = "font-size:18px;">Tech Support</option>
+            <option value="Protective-serv" style = "font-size:18px;">Protective Service</option>
+            <option value="Priv-house-serv" style = "font-size:18px;">Private House Service</option>
+            <option value="Armed-Forces" style = "font-size:18px;">Armed Forces</option>
+            <option value="Other-service" style = "font-size:18px;">Other Service</option>
+        </select> 
+
+        <br>
+        <label for = "Role in Family" style = "font-size:18px;">Input Role in Current Family :</label>
+        <select id = "Role in Family" name = "Role in Family">
+            <option value="Husband" style = "font-size:18px;">Husband</option>
+            <option value="Wife" style = "font-size:18px;">Wife</option>
+            <option value="Own-child" style = "font-size:18px;">Child</option>
+            <option value="Unmarried" style = "font-size:18px;">Unmarried</option>
+            <option value="Other-relative" style = "font-size:18px;">Other Relative</option>
+            <option value="Not-in-family" style = "font-size:18px;">Not in Family / Support ownself</option>
+        </select>
+
+        <br>
+        <label for = "Race" style = "font-size:18px;">Input Race :</label>
+        <select id = "Race" name = "Race">
+            <option value="White" style = "font-size:18px;">White</option>
+            <option value="Black" style = "font-size:18px;">Black</option>
+            <option value="Asian-Pac-Islander" style = "font-size:18px;">Asian Pacific Islander</option>
+            <option value="Amer-Indian-Eskimo" style = "font-size:18px;">American Native</option>
+            <option value="Other" style = "font-size:18px;">Other</option>
+        </select> 
+
+        <br>
+        <label for = "Gender" style = "font-size:18px;">Input Gender :</label>
+        <select id = "Gender" name = "Gender">
+            <option value="Male" style = "font-size:18px;">Male</option>
+            <option value="Female" style = "font-size:18px;">Female</option>
+        </select> 
+
+        <br>
+        <label for="Workhours per Week" style="font-size:18px;" >Input Workhours per Week :</label>
+        <input type="number" id="Workhours per Week" name="Workhours per Week" min="1" max="99" style = 'font-size:18px'>
+        
+        <br>
+        <label for = "Native Country" style = "font-size:18px;">Input Origin Country / Native Country :</label>
+        <select id = "Native Country" name = "Native Country">
+            <option value="United-States" style = "font-size:18px;">United States</option>
+            <option value="Outside-US" style = "font-size:18px;">Outside United States</option>
+        </select> 
+
+        <br>
+        <input type = 'submit' value = 'Predict Income'>
+    </form>
+</body>
+
+</html>
+
