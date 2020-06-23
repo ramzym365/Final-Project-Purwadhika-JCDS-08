@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conclusion</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+
+<body style="background-color:whitesmoke">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="http://127.0.0.1:5000/">Home</a>
+            <a class="nav-item nav-link" href="http://127.0.0.1:5000/introduction">Introduction</a>
+            <a class="nav-item nav-link" href="http://127.0.0.1:5000/dataset">Dataset</a>
+            <a class="nav-item nav-link" href="http://127.0.0.1:5000/visualization">Data Visualization</a>
+            <a class="nav-item nav-link active" href="http://127.0.0.1:5000/conclusion">Conclusion<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="http://127.0.0.1:5000/prediction">Prediction</a>
+          </div>
+        </div>
+    </nav>
+
+    <center>
+      <h2><b>Model Evaluation</b></h2>
+    </center>
+    
+    
+    <center>
+      <table border="1" class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th></th>
+            <th>Accuracy Score</th>
+            <th>F1-Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Logistic Regression</th>
+            <td>0.805317</td>
+            <td>0.879253</td>
+          </tr>
+          <tr>
+            <th>Logistic Regression with Hyperparameter Tuning</th>
+            <td>0.800860</td>
+            <td>0.876712</td>
+          </tr>
+          <tr>
+            <th>Support Vector Classifier (SVC)</th>
+            <td>0.820990</td>
+            <td>0.889332</td>
+          </tr>
+          <tr>
+            <th>Support Vector Classifier (SVC) with Hyperparameter Tuning</th>
+            <td>0.822526</td>
+            <td>0.890718</td>
+          </tr>
+          <tr>
+            <th>Random Forest Classifier</th>
+            <td>0.820529</td>
+            <td>0.884767</td>
+          </tr>
+          <tr>
+            <th>Random Forest Classifier with Hyperparameter Tuning</th>
+            <td>0.838967</td>
+            <td>0.897516</td>
+          </tr>
+          <tr>
+            <th>XGBoost Classifier</th>
+            <td>0.842502</td>
+            <td>0.899124</td>
+          </tr>
+          <tr>
+            <th>XGBoost Classifier with Hyperparameter Tuning</th>
+            <td>0.842655</td>
+            <td>0.899371</td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+    <br>
+    <center>
+      <h2><b>ROC Curve</b></h2>
+    </center>
+    <center>
+      <img src="http://127.0.0.1:5000/static/roc.png" width = '900' height = '600'>
+    </center>
+    <br>
+    <center>
+      <h2><b>Conclusion</b></h2>
+    </center>
+    <ul>
+      <li>We tried 4 different types of models (Logistic Regression, Support Vector Classifier, Random Forest Classifier, and XGBoost Classifier) with each models we conduct hyperparameter tuning.</li>
+      <li>We use 3 kinds of Model Evaluation consisting of Accuracy Score, F1-Score, and AU-ROC Curve.</li>
+      <li>XGBoost Classifier with Hyperparameter Tuning is the best model with Accuracy Score of 0.842655, F1-Score of 0.899371, and AU-ROC Curve Score of 0.88830.</li>
+    </ul>
+
+</body>
+
+</html>
+
+
+
+    
