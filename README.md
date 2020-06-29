@@ -66,4 +66,4 @@ So from our evaluation metrices (F1-Score, Accuracy Score, and AUC-ROC), I can d
 ### Thank you for reading until the end!
 
 #### Fariz Darmawan 
-#### [Email](darmawanfariz@gmail.com) | [LinkedIn](https://www.linkedin.com/in/fariz-darmawan-a28600b3//) | [GitHub](https://github.com/farizdar/) 
+#### Email : darmawanfariz@gmail.com | [LinkedIn](https://www.linkedin.com/in/fariz-darmawan-a28600b3//) | [GitHub](https://github.com/farizdar/) 
