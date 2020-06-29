@@ -61,7 +61,7 @@ For each model, the AUC-ROC score is :
 | XGBoost Classifier with Hyperparameter Tuning              |         0.88830 |   
 
 From the AUC and AUC-ROC score, XGBoost model has the biggest score.
-So from our evaluation metrices (F1-Score, Accuracy Score, and AUC-ROC), I can draw a conclusion that XGBoost Classifier with Hyperparameter Tuning model is the best model for this project.
+So from the evaluation metrices (F1-Score, Accuracy Score, and AUC-ROC), I can draw a conclusion that XGBoost Classifier with Hyperparameter Tuning model is the best model for this project.
 
 ### Thank you for reading until the end!
 
