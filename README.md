@@ -20,10 +20,10 @@ Knowledege & Usability
 Model Building & Evaluation
 -------
 Before building model, I've done some cleaning including Renaming Columns, Dropping Duplicate Data, Categorizing Feature, and Cleaning Null Values ('?'). 
-Furthermore in this process, you can see '1 Data Cleaning' notebook.<br>
-Also I've done some Exploratory Data Analysis (EDA) that can be seen on the '2 EDA' notebook.
+Furthermore in this process, you can see <a href="https://github.com/farizdar/Final-Project-Purwadhika-JCDS-08/blob/master/1%20Data%20Cleaning.ipynb">'1 Data Cleaning'</a> notebook.<br>
+Also I've done some Exploratory Data Analysis (EDA) that can be seen on the <a href="https://github.com/farizdar/Final-Project-Purwadhika-JCDS-08/blob/master/2%20EDA.ipynb">'2 EDA'</a> notebook.
 
-For building this model, I've done some Feature Selection, Outliers Handling with Scaling, and Handling Imbalanced Data with SMOTE that can be seen in '3 Building Model' notebook.
+For building this model, I've done some Feature Selection, Outliers Handling with Scaling, and Handling Imbalanced Data with SMOTE that can be seen in <a href="https://github.com/farizdar/Final-Project-Purwadhika-JCDS-08/blob/master/3%20Building%20Model.ipynb">'3 Building Model'</a> notebook.
 In addition, for this project, I use 4 different kind models with each model I apply a randomized search Hyperparameter Tuning.
 Here are the evaluation metrics for those 8 different models :
 
